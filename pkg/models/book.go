@@ -1,15 +1,15 @@
 package models
 
 import (
-	"github.com/hafizamer/sqlBookstore/pks/config"
+	"github.com/hafizamer/sqlBookstore/pkg/config"
 	"github.com/jinzhu/gorm"
 )
 
 var db *gorm.DB
 
 type Book struct {
-	gorm.model
-	Name        string `gorm:""json:"name`
+	gorm.Model
+	Name        string `gorm:"" json:"name"`
 	Author      string `json:"author"`
 	Publication string `json:"publication"`
 }
